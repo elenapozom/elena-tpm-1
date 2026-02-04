@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- idioma -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
     <title>TPM-1</title>
     <script src="script.js"></script>
 </head>
-<body>
+<body style="background-color: navajowhite;">
     <h1>TPM-1</h1>
     <h2>Primera página</h2>
     <h3>tamaño subtítulo</h3>
@@ -26,23 +26,27 @@
             hola caracola
         </p>
     </div>
-    <header>
-        <nav></nav>
+    <header style=" background-color: red;"> <!-- encabezado que nunca cambia -->
+        <nav id="menu"> <!-- id: crear "enlace" navegación -->
+            <p>
+                It is a long established fact that a reader will be distracted
+            </p>
+        </nav>
     </header>
-    <main>
-        <section>
-            <article>
+    <main style=" background-color: aqua;">
+        <section style="background-color: lightblue; height: 500px;"> <!-- secciones y color -->
+            <article style="width: 50%;"> <!-- width: ancho del texto -->
                 <p>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                 </p>
             </article>
             <article>
                 <p>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                 </p>
             </article>
         </section>
-        <section>
+        <section style=" background-color: lightgray;">
             <div>
                 <p>
                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
@@ -58,10 +62,30 @@
             <section></section>
             <section></section>
         </section>
-            <aside>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+            <aside style="background-color: lightpink;"> <!-- información que va en el lateral -->
+                <p>
+                    <strong>negrita</strong> <a href="#menu">Pulsa aqui</a> <em>cursiva</em> <mark>subrayado</mark> <small>reducir tamaño</small> established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                </p>
             </aside>
-
+         <section>
+             <ol> <!-- listas por numeración -->
+                 <li><a href="https://www.google.com" target="_blank">Elemento 1</a></li>
+                 <li>Elemento 2</li>
+                 <li>Elemento 3</li>
+                 <li>Elemento 4</li>
+                 <li>Elemento 5</li>
+             </ol>
+             <ul> <!-- listas puntos -->
+                 <li>Elemento A</li>
+                 <li>Elemento B</li>
+                 <li>Elemento C</li>
+                 <li>Elemento D</li>
+                 <li>Elemento E</li>
+            </ul>
+        </section>
+        <section> 
+            <img src="img/gatito.jpg" alt="Descripción de la imagen" width="200px" height=""> <!-- imagenes, width y height trabajar mejor con css -->
+        </section>
     </main>
     <footer> </footer>
 
