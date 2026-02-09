@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> /* Estilos css dentro de html */
+        body { 
+            color: blue; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            /*font-weight: bold;
+            font-style: italic;*/
+        }
+        /*  Texto en negrita y cursiva (comentario en css) */
+        .negritaCursiva {
+            font-weight: bold;
+            font-style: italic;
+        }
+         /*  Texto sin negrita ni cursiva */
+        #sinCursivaNiNegrita {
+            font-weight: normal;
+            font-style: normal;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p style="color: red;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span class="negritaCursiva">Voluptas,</span> voluptate.
+        </p>
+        <p class="negritaCursiva"> <!-- se aplica a todo el p -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
+        </p>
+    </section>
+    <section class="negritaCursiva"> <!-- se aplica a todo el section -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
+        </p>
+        <p id="sinCursivaNiNegrita">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
+        </p>
+    </section>
+    <section>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
+        </p>
+    </section>
+</body>
+</html>
