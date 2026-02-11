@@ -1,0 +1,88 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+
+.ancho50{
+    width: 50%; /* WIDTH: bloque */
+    background-color: aqua;
+    border: #333 solid 2px; /* BORDER: borde del bloque */
+    /* height: 200px;*/
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-left: 100px;
+    opacity: 0.5; /* OPACITY: opacidad */
+}
+
+p {
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+
+    text-align: justify; /* TEXT-ALIGN: alineación del texto */
+
+    margin: 20px 40px 20px 40px;
+}
+
+.padding{ /* PADDING: márgenes dentro de la caja */
+    width: 80%;
+    padding: 20px 40px 20px 40px;
+    background-color: #f0f0f0;
+    border: #333 solid 2px;
+    margin-bottom: 40px;
+    box-shadow: #333 5px 5px 10px; /* BOX-SHADOW: sombra del cuadrado */
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{ /* HOVER: como cambia al poner el cursor encima del enlace */
+    text-decoration: underline;
+}
+
+#caja{ /* #: para seleccionar un id */
+    width: 200px;
+    height: 200px;
+    border: #333 solid 2px;
+    background-color: aqua;
+}
+
+main{
+    display: flex; /* FLEX: distribución en fila o columna */
+    justify-content: center; /* JUSTIFY-CONTENT: justificación elementos */
+    align-items: center; /* ALIGN-ITEMS: alineación elementos */
+    height: 700px;
+    border: #8a8a8a dotted 1px;
+}
+
+#caja2{
+    width: 500px;
+    height: 200px;
+    border: #333 solid 2px;
+    background-color: #f0f0f0;
+}
+
+.menu-nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.menu-nav a{
+    display: block;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: white;
+}
+
+.menu-nav a:hover{
+    background-color: #555;
+    color: #22e549;
+}
