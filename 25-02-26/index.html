@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase de formularios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="procesar.php" method="post" autocomplete="on"> <!-- FORM: Para hacer un formulario / METHOD: Para enviar los datos-->
+        <div class="form-group">
+            <label for="nombre">Nombre completo</label> <!-- LABEL: Para nombrar la casilla -->
+            <input type="text" id="nombre" name="formName" placeholder="Nombre y apellidos" required> <!-- INPUT: Crea la casilla para escribir -->
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Tu email favorito" required> 
+        </div>
+
+        <div class="form-group">
+            <label for="pass">Contraseña</label>
+            <input type="password" id="pass" name="pass" minlength="8">
+            <label for="pass-rep">Repetir contraseña</label>
+            <input type="password" id="pass-rep" name="pass-rep">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone"> 
+
+            <label for="checkbox">Acepta llamadas</label>
+            <input type="checkbox" id="checkbox" name="checkbox"> <!-- CHECKBOX: Crea un cuadro para marcar -->
+
+            <label for="radio1">Llamadas mañana</label>
+            <input type="radio" id="radio1" name="radio"> <!-- RADIO: Crea un botón de opción -->
+
+            <label for="radio2">Llamadas tarde</label>
+            <input type="radio" id="radio2" name="radio2"> <!-- NUMBER: Crea una casilla para números -->
+
+            <label for="edad">Edad</label>
+            <input type="number" min="18" max="150" id="edad"> <!-- NUMBER: Crea una casilla para números -->
+        </div> 
+
+        <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" rows="4" cols="40" placeholder="Cuentanos sobre lo que necesitas"></textarea>
+        </div>
+
+        <div class="form-group">
+            <select name="servicio" id="servicio"> <!-- SELECT: Selección desplegable -->
+                <option value="">Seleccionar servicio</option>
+                <option value="branding">Branding</option>
+                <option value="web">Diseño web</option>
+                <option value="uxui">UX/UI</option>
+            </select>
+
+            <label for="fecha">Inicio proyecto</label>
+            <input type="date" name="fecha" id="fecha">
+
+            <label for="color">Color corporativo</label>
+            <input type="color" name="color" id="color">
+
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Enviar form</button> <!-- SUBMIT: Crea botones-->
+            <button type="reset">Limpiar</button>
+        </div>
+
+        <!-- <input type="submit" title="Enviar"> 
+             <button type="button">No hace nada</button>  -->
+    </form>
+</body>
+</html>
